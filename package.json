@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@nestjs/mapped-types": "*",
+    "lovable-tagger": "^1.1.8",
+    "pdfkit": "^0.17.0"
+  },
+  "name": "GPS",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "yarn workspace frontend dev",
+    "dev:backend": "yarn workspace backend start:dev",
+    "build:frontend": "yarn workspace frontend build",
+    "build:dev": "yarn workspace frontend build:dev",
+    "build:backend": "yarn workspace backend build",
+    "start:backend": "yarn workspace backend start",
+    "start:frontend": "yarn workspace frontend preview"
+  }
+}
